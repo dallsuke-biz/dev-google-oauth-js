@@ -8,6 +8,14 @@
 		<a href="https://www.google.com/">Googleでログインする</a>
 		<script>
 			console.log('hello');
+			const loginUrl = 'https://accounts.google.com/o/oauth2/v2/auth?'
+				+ 'scope=https%3A//www.googleapis.com/auth/drive.readonly'
+				+ '&include_granted_scopes=true'
+				+ '&response_type=token'
+				+ '&state=state_parameter_passthrough_value'
+				+ '&redirect_uri=https%3A//dallsuke-biz.github.io/dev-google-oauth-js/redirect/'
+				+ '&client_id=181703571235-rdi0efej2f16uamfov9gk7indpd7vpga.apps.googleusercontent.com';
+			console.log(loginUrl);
 		</script>
 	</body>
 </html>
